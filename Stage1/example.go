@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// ---------- Variable ------------------
+	// --------------- Variable ----------------
 	var name string
 	name = "Mew PK" // Manual Type Declaration
 	age := 200      // Type Inference
@@ -24,4 +24,11 @@ func main() {
 	} else {
 		fmt.Println("Fail")
 	}
+	//----------------- array ---------------
+	var setNumber [4]int = [4]int{1, 2, 3, 4}
+	setText := []string{"Cat", "Dog"}
+
+	fmt.Println(setNumber, len(setNumber))
+	fmt.Println(setText, len(setText))
+	fmt.Println(setNumber[:2])
 }
