@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	// --------------- Variable ----------------
@@ -47,4 +49,11 @@ func main() {
 	for i := 1; i <= 10; i++ {
 		fmt.Println(i)
 	}
+	//------------ function-----------
+	fmt.Println(sum(10, 20))
+
+}
+
+func sum(a, b int) int {
+	return a + b
 }
