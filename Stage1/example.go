@@ -30,5 +30,17 @@ func main() {
 
 	fmt.Println(setNumber, len(setNumber))
 	fmt.Println(setText, len(setText))
+	//---------------Slices------------
 	fmt.Println(setNumber[:2])
+	// --------------Map---------------
+	country := map[string]string{}
+	country["TH"] = "Thailand"
+
+	value, check := country["JP"]
+
+	if check {
+		fmt.Println(value)
+	} else {
+		fmt.Println("not found!")
+	}
 }
