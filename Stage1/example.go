@@ -4,6 +4,14 @@ import (
 	"fmt"
 )
 
+// ------------ Struct-----------
+
+type Person struct {
+	name   string
+	weight int
+	height float32
+}
+
 func main() {
 	// --------------- Variable ----------------
 	var name string
@@ -52,7 +60,9 @@ func main() {
 	//------------ function-----------
 	fmt.Println(sum(10, 20))
 	fmt.Println(sumAll(10, 20, 30, 40, 50, 60))
-
+	// ------------ Struct-----------
+	Mewpk := Person{name: "MewPk", weight: 50, height: 160.5}
+	fmt.Println(Mewpk)
 }
 
 func sum(a, b int) int {
