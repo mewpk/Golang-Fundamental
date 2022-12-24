@@ -18,4 +18,10 @@ func main() {
 	fmt.Scanf("%d", &point)
 	fmt.Println("Point = ", point)
 
+	// --------------- if condition ----------
+	if point > 50 {
+		fmt.Println("Pass")
+	} else {
+		fmt.Println("Fail")
+	}
 }
