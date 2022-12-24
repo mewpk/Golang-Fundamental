@@ -51,9 +51,18 @@ func main() {
 	}
 	//------------ function-----------
 	fmt.Println(sum(10, 20))
+	fmt.Println(sumAll(10, 20, 30, 40, 50, 60))
 
 }
 
 func sum(a, b int) int {
 	return a + b
+}
+
+func sumAll(numbers ...int) int {
+	total := 0
+	for _, value := range numbers {
+		total += value
+	}
+	return total
 }
