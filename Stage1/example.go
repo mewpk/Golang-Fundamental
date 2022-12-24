@@ -1,6 +1,7 @@
 package main
 
 import (
+	"examplego/cal"
 	"fmt"
 )
 
@@ -63,6 +64,8 @@ func main() {
 	// ------------ Struct-----------
 	Mewpk := Person{name: "MewPk", weight: 50, height: 160.5}
 	fmt.Println(Mewpk)
+	// -----------Package-----------
+	fmt.Println(cal.CalMuti(20, 20))
 }
 
 func sum(a, b int) int {
